@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Button Click</title>
+</head>
+<body>
+    <button onclick="veranderTekst()">Klik om tekst te veranderen</button>
+    <h1 id="tekst">Hier is mijn tekst.</h1>
+    
+    <script>
+        function veranderTekst() {
+            // Hier plaats je de JavaScript-functie om de tekst te veranderen
+            var tekstElement = document.getElementById("tekst");
+            tekstElement.innerHTML = "Is het goed zo meneer? :)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tekst Klik</title>
+</head>
+<body>
+    <h1 id="tekst" onclick="veranderTekst()">Klik hier om de tekstkleur te veranderen</h1>
+    
+    <script>
+        function veranderTekst() {
+            var tekstElement = document.getElementById("tekst");
+            if (tekstElement.style.color === "red") {
+                tekstElement.style.color = "blue";
+            } else {
+                tekstElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
