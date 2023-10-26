@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Clicker Game</title>
+
+</head>
+
+<body>
+
+    <h1>Clicker Game</h1>
+
+    <p>Huidig getal: <span id="getal">0</span></p>
+
+    <button id="knop">Klik hier!</button>
+
+    <script>
+
+        let getal = 0;
+
+        function verhoogGetal() {
+
+           getal++;
+
+            if (getal === 10) {
+
+                getal = 0;
+
+            }
+
+            document.getElementById("getal").textContent = getal;
+
+        }
+
+        document.getElementById("knop").addEventListener("click", verhoogGetal);
+
+    </script>
+
+</body>
+
+</html>
